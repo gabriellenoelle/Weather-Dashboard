@@ -13,7 +13,7 @@ function initPage() {
     console.log(searchHistory);
     
 
-    const APIKey = "c9a9ed03a355403f4cb9a36e931c0b4a";
+    const APIKey = "6c2c75bc83ca1b99d97a14f7d2881ece";
 
 // When a city is searched for
 // Then the user is presented with current and future conditions for that city
@@ -95,7 +95,6 @@ for (i=0; i<forecastEls.length; i++) {
 });  
 }
 
-
 // When the user clicks on a city in the search history
 // Then they are again presented with current and future conditions for that city
 
@@ -136,5 +135,5 @@ searchEl.addEventListener("click",function() {
     if (searchHistory.length > 0) {
     getWeather(searchHistory[searchHistory.length - 1]);
     }}
-    
+
     initPage();
